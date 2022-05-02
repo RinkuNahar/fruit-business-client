@@ -1,0 +1,13 @@
+.supplies-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px
+}
+
+.supplies-button{
+    background-color:rgba(121, 12, 110, 0.642);
+    color: aliceblue;
+    font-size: x-large;
+    border-radius: 10px;
+    box-shadow: 10px 5px rgba(128, 128, 128, 0.237);
+}

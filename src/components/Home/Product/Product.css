@@ -1,0 +1,13 @@
+.product-review{
+    display: block;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(135, 206, 250, 0.292);
+    height: 420px;
+    margin-bottom: 50px;
+}
+.product-review img{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+}
