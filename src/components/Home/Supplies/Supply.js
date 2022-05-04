@@ -9,7 +9,7 @@ const Supply = () => {
         .then(data=>setSupplies(data));
     },[]);
     return (
-        <div className='supplies-container'>
+        <div className='supplies-container mt-4'>
         {
             supplies.map(product=><Product product={product} key={product.name}></Product> )
         }

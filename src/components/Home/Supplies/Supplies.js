@@ -18,8 +18,12 @@ const Supplies = () => {
             <section  className='supplies-container'>
 
                 {
-                    supplies.slice(0, 6).map(product => <Product product={product} key={product.id}></Product>)
+                    supplies.slice(0,6).map(product => <Product
+                         product={product}
+                          key={product._id}
+                          ></Product>)   
                 }
+              
             </section>
 
             <div className=' mt-4 mb-4'>
