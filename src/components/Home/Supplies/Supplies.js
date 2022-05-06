@@ -6,7 +6,7 @@ import './Supplies.css'
 const Supplies = () => {
     const [supplies, setSupplies] = useState([]);
     useEffect(() => {
-        fetch('data.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setSupplies(data));
     }, []);

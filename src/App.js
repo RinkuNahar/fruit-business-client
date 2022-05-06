@@ -11,6 +11,7 @@ import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Checkout from './components/CheckOut/Checkout';
 import Footer from './components/Common/Footer/Footer';
+import AddProduct from './components/AddProduct/AddProduct';
 
 
 function App() {
@@ -28,6 +29,12 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+
+        <Route path='/addproduct' element={
+          <RequireAuth>
+           <AddProduct></AddProduct>
           </RequireAuth>
         }></Route>
 
