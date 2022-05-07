@@ -82,7 +82,7 @@ const LogIn = () => {
         
         <p className='mt-4 fs-5 forget-para'>Forget Password? <button to={'/register'} className='text-primary border-0 text-decoration-none  bg-white login-button forget-para '  onClick={resetPassword}>Reset Password</button></p>
         <SocialLogin></SocialLogin>
-       <ToastContainer></ToastContainer>
+      
    
     </div>
     );

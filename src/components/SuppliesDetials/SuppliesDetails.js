@@ -15,7 +15,7 @@ const SuppliesDetails = () => {
     return (
         <div>
             <h2>Supply Product Name: {supply.name}</h2>
-            <Link to='/checkout'>
+            <Link to={`/checkout/${suppliesId}`}>
                     <button className='btn btn-primary mb-4'>Delivered</button>
             </Link>
 

@@ -16,7 +16,7 @@ const Product = (props) => {
                 <img className='img-fluid' src={img} alt="" />
                 <h2>{name}</h2>
                 <h4>Quantity: {quantity}</h4>
-                <h4>Price: {price}</h4>
+                <h4>Price:  {price}</h4>
                 <h4>Supplier Name: {supplier_name}</h4>
                 <h4>{about}</h4>
                 <button onClick={()=>navigateToSuppliesDetail(_id)}  className='mb-2 btn-primary btn'>Update</button>

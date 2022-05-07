@@ -13,6 +13,7 @@ import Checkout from './components/CheckOut/Checkout';
 import Footer from './components/Common/Footer/Footer';
 import AddProduct from './components/AddProduct/AddProduct';
 import ManageInventories from './components/ManageInventories/ManageInventories';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Route path='/login' element={<LogIn></LogIn>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
 
-        <Route path='/checkout' element={
+        <Route path='/checkout/:suppliesId' element={
           <RequireAuth>
             <Checkout></Checkout>
           </RequireAuth>
@@ -49,6 +50,7 @@ function App() {
       </Routes>
 
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
