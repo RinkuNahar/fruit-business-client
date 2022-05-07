@@ -14,6 +14,7 @@ import Footer from './components/Common/Footer/Footer';
 import AddProduct from './components/AddProduct/AddProduct';
 import ManageInventories from './components/ManageInventories/ManageInventories';
 import { ToastContainer } from 'react-toastify';
+import MyItems from './components/MyItems/MyItems';
 
 
 function App() {
@@ -43,6 +44,12 @@ function App() {
         <Route path='/manageInventories' element={
           <RequireAuth>
           <ManageInventories></ManageInventories>
+          </RequireAuth>
+        }></Route>
+
+        <Route path='/orders' element={
+          <RequireAuth>
+          <MyItems></MyItems>
           </RequireAuth>
         }></Route>
 
