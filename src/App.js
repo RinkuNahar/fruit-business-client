@@ -15,6 +15,9 @@ import AddProduct from './components/AddProduct/AddProduct';
 import ManageInventories from './components/ManageInventories/ManageInventories';
 import { ToastContainer } from 'react-toastify';
 import MyItems from './components/MyItems/MyItems';
+import Blog from './components/Home/Blog/Blog';
+import Review from './components/Home/Review/Review';
+import Contact from './components/Home/Contact/Contact';
 
 
 function App() {
@@ -52,6 +55,10 @@ function App() {
           <MyItems></MyItems>
           </RequireAuth>
         }></Route>
+
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/review' element={<Review></Review>}></Route>
+        <Route path='/contact' element={<Contact></Contact>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

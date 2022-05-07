@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Eater&family=Poppins:wght@500;700&family=Rubik+Glitch&display=swap');
 .footer{
     height: 200px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 0;
 }
 
 .footer-title{
-    font-family: 'Dancing Script', cursive;
+font-family: 'Dancing Script', cursive;
 font-family: 'Eater', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Rubik Glitch', cursive;

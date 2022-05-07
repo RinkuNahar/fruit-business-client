@@ -1,0 +1,47 @@
+.review-img{
+    height: 150px;
+    padding: 10px;
+}
+
+.style-div{
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 2px;
+    background-color: black;
+}
+
+.review-layout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+
+.review-img-woman{
+    height: 142px;
+    padding: 10px;
+}
+
+.review{
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+@media(max-width:540px){
+    .review-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   
+    
+    }
+    .style-div{
+        height: 275px;
+    }
+}
+@media(max-width:768px) and (min-width:540px){
+    .review-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+}
