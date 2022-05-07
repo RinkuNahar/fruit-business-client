@@ -59,6 +59,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/review' element={<Review></Review>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/reviews' element={<Review></Review>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

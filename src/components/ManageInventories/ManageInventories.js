@@ -28,10 +28,10 @@ const ManageInventories = () => {
 
     return (
         <div>
-            <h2>Manage your production</h2>
+            <h2 className='pb-2'>Manage your Products</h2>
             {
                 supplies.map(product => <div key={product._id}>
-                    <h4>{product.name} <button onClick={()=>handleDelete(product._id)}> X </button></h4>
+                    <h4>{product.name} <button className='btn-primary btn' onClick={()=>handleDelete(product._id)}> Delete </button></h4>
                     
                 </div>)
             }
