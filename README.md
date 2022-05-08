@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Project Name : Juicy Warehouse
+* set react route
+* use node.js express.js 
+* use mongodb as a database
+* use firebase for sign in and login
+* admin can add product update as their wish and also can delivered them
+
+## Short Description:
+People from here can purchase fruits.and they have to take these fruits as a carton.But for doing that they have to login in our website by giving their email and password or they can login directly with their google.and then admin can add product and also can delete product from all the products.And user can see their selected products item.
+
+# Project Live Site :
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
