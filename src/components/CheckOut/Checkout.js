@@ -12,7 +12,7 @@ const Checkout = () => {
     const [user] = useAuthState(auth);
 
     useEffect(()=>{
-        const url = `http://localhost:5000/inventory/${suppliesId}`
+        const url = `https://blooming-citadel-24075.herokuapp.com/inventory/${suppliesId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setSupply(data));
@@ -28,7 +28,7 @@ const Checkout = () => {
             phone: event.target.phone.value
         }
 
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://blooming-citadel-24075.herokuapp.com/order', order)
         .then(response=>{
            const {data} = response;
            if(data.insertedId){

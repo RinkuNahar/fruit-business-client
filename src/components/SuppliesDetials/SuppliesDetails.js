@@ -6,7 +6,7 @@ const SuppliesDetails = () => {
     const [supply, setSupply] = useState({});
 
     useEffect(()=>{
-        const url = `http://localhost:5000/inventory/${suppliesId}`
+        const url = `https://blooming-citadel-24075.herokuapp.com/inventory/${suppliesId}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setSupply(data));

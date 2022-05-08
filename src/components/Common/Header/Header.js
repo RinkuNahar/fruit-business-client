@@ -33,9 +33,6 @@ const Header = () => {
 
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="contact" className='headline'>Contact</Nav.Link>
-                            <Nav.Link as={Link} to="blog" className='headline'>Blog</Nav.Link>
-
                             {
                                 user && <>
                                 <Nav.Link as={Link} to="addproduct">Add Product</Nav.Link>
@@ -45,7 +42,8 @@ const Header = () => {
                                 <Nav.Link as={Link} to="orders">My Items</Nav.Link>
                                 </>
                             }
-                         
+                               <Nav.Link as={Link} to="contact" className='headline'>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="blog" className='headline'>Blog</Nav.Link>
                             {
                             user ?
                                 <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>

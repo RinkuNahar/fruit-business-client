@@ -4,7 +4,7 @@ const ManageInventories = () => {
 
     const [supplies, setSupplies] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/inventory')
+        fetch('https://blooming-citadel-24075.herokuapp.com/inventory')
         .then(res=>res.json())
         .then(data=>setSupplies(data));
     },[]);
@@ -12,7 +12,7 @@ const ManageInventories = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are You Sure?');
         if(proceed){
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://blooming-citadel-24075.herokuapp.com/inventory/${id}`;
             fetch(url,{
                 method: 'DELETE'
             })
